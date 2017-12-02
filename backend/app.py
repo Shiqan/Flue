@@ -1,13 +1,17 @@
 import falcon
 from waitress import serve
+from falcon_cors import CORS
 
 from vainglory import Players, Matches
 
-api = application = falcon.API()
+cors = CORS(allow_all_origins=True, allow_origins_list=['http://localhost.com:8081'])
+
+
+api = application = falcon.API(middleware=[cors.middleware])
 
 players = Players()
 matches = Matches()
 api.add_route('/api/player/{region}/{name}', players)
 api.add_route('/api/matches/{region}/{name}', matches)
 
-serve(api, host='0.0.0.0', port=8080)
+serve(api, host='0.0.0.0', port=8081)
