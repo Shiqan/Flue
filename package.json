@@ -12,7 +12,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",  
-    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies. && node --version && npm --version",
     "heroku-postbuild": "echo This runs afterwards."
   },
   "dependencies": {
@@ -96,8 +96,8 @@
     "webpack-merge": "^2.6.1"
   },
   "engines": {
-    "node": ">= 9.2.0",
-    "npm": ">= 5.5.1"
+    "node": "9.2.0",
+    "npm": "5.5.1"
   },
   "browserslist": [
     "> 1%",
