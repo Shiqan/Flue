@@ -6,5 +6,9 @@
   "private": true,
   "scripts": {
     "postinstall": "npm install express"
+  },
+  "engines": {
+    "node": "9.2.0",
+    "npm": "5.5.1"
   }
 }
