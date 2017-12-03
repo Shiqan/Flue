@@ -7,6 +7,16 @@
   "scripts": {
     "start": "node frontend/build/prod-server.js"
   },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "chart.js": "^2.5.0",
+    "express": "4.16.2",
+    "moment": "^2.18.1",
+    "vue": "^2.2.2",
+    "vue-chartjs": "^2.6.0",
+    "vue-router": "^2.3.0",
+    "vuejs-datepicker": "^0.7.7"
+  },
   "engines": {
     "node": "9.2.0",
     "npm": "5.5.1"
