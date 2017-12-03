@@ -5,7 +5,7 @@
   "author": "Shiqan",
   "private": true,
   "scripts": {
-    "start": "npm install && node frontend/build/prod-server.js"
+    "start": "node frontend/build/prod-server.js"
   },
   "dependencies": {
     "axios": "^0.16.1",
@@ -14,9 +14,7 @@
     "vue": "^2.2.2",
     "vue-chartjs": "^2.6.0",
     "vue-router": "^2.3.0",
-    "vuejs-datepicker": "^0.7.7"
-  },
-  "devDependencies": {
+    "vuejs-datepicker": "^0.7.7",
     "@nextindex/next-scss": "^1.1.0",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
