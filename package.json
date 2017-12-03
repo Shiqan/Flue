@@ -5,7 +5,7 @@
   "author": "Shiqan",
   "private": true,
   "scripts": {
-    "start": "node frontend/build/prod-server.js"
+    "start": "npm install && node frontend/build/prod-server.js"
   },
   "dependencies": {
     "axios": "^0.16.1",
