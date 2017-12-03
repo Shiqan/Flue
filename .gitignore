@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# Vue stuff
+!frontend/build
+!frontend/dist
+node_modules

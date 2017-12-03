@@ -5,10 +5,6 @@
   "author": "Shiqan",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-  },
-  "engines": {
-    "node": "9.2.0",
-    "npm": "5.5.1"
+    "postinstall": "npm install express"
   }
 }
