@@ -1,1 +1,1 @@
-web: python backend/app.py &&  npm start
+web: gunicorn --pythonpath backend app.api &&  npm start
