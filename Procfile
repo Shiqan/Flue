@@ -1,1 +1,1 @@
-web: gunicorn backend/app --keep-alive 60 &&  npm start
+web: python backend/app.py &&  npm start
