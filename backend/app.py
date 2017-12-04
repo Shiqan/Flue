@@ -14,4 +14,4 @@ matches = Matches()
 api.add_route('/api/player/{region}/{name}', players)
 api.add_route('/api/matches/{region}/{name}', matches)
 
-serve(api, host='0.0.0.0', port=8081)
+# serve(api, host='0.0.0.0', port=8081)
