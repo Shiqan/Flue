@@ -1,3 +1,4 @@
+import os
 import falcon
 from waitress import serve
 from falcon_cors import CORS
