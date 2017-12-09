@@ -6,7 +6,7 @@ from falcon_cors import CORS
 from vainglory import Players, Matches
 
 port = int(os.environ.get('PORT', 8081))
-cors = CORS(allow_all_origins=True])
+cors = CORS(allow_all_origins=True)
 api = application = falcon.API(middleware=[cors.middleware])
 
 players = Players()
