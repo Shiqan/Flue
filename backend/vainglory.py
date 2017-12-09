@@ -1,7 +1,7 @@
 import os
 import json
 import falcon
-from vgapi import VaingloryApi
+from .vgapi import VaingloryApi
 
 api_key = os.environ.get('API_KEY', None)
 api = VaingloryApi(api_key)
