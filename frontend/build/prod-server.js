@@ -1,12 +1,8 @@
-var config = require('../config')
-if (!process.env.NODE_ENV) {
-  process.env.NODE_ENV = JSON.parse(config.build.env.NODE_ENV)
-}
 var express = require('express')
 var path = require('path')
 var serveStatic = require('serve-static')
 
-var port = process.env.PORT || config.dev.port
+var port = process.env.PORT || 8080
 app = express()
 
 console.log(__dirname)
