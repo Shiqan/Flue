@@ -119,7 +119,7 @@
         }
         this.resetState()
         this.loading = true
-        axios.get(`http://localhost:8081/api/player/eu/${this.package}`)
+        axios.get(`/api/player/eu/${this.package}`)
           .then(response => {
             console.log(response)
             this.rawData = response.data.data
